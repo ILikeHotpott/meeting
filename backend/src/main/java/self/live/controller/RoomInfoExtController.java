@@ -18,12 +18,6 @@ public class RoomInfoExtController {
         this.roomInfoExtService = roomInfoExtService;
     }
 
-    /**
-     * 获取新的成员id
-     *
-     * @param roomName
-     * @return
-     */
     @GetMapping(value = "/get-new-member", produces = "text/event-stream;charset=UTF-8")
     public String getNewMember(@RequestParam("roomName") String roomName, @RequestParam("id") String id) {
         return OvercoatSseExceptionUtil.handleException(() -> {

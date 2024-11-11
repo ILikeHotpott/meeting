@@ -22,7 +22,6 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    /*视频控件上方需要设置z-index*/
     z-index: 10;
     background-color: rgba(255, 255, 255, 0);
     cursor: pointer;

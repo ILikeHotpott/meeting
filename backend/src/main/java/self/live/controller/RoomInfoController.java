@@ -40,7 +40,7 @@ public class RoomInfoController {
     @PostMapping("/out-room")
     public void outRoom(@RequestBody RoomInfoVo roomInfoVo) {
         String id = roomInfoVo.getId();
-        Assert.isNotBlank(id, "退出人");
+        Assert.isNotBlank(id, "Quit");
         roomInfoService.outRoom(id);
     }
 }

@@ -66,7 +66,7 @@ export default class SelfVideoBoxControl {
         const videoTracks = stream.getVideoTracks();
         const audioTracks = stream.getAudioTracks();
         if (videoTracks.length < 1 || audioTracks.length < 1) {
-            MessageBoxControl.open("视频或音频缺失！", () => window.location.reload());
+            MessageBoxControl.open("Video or audio track not found!", () => window.location.reload());
         }
         audioTracks.forEach(track => this.stream.addTrack(track));
         this.videoEl.srcObject = stream;
@@ -133,7 +133,7 @@ export default class SelfVideoBoxControl {
             eval(`this.${styleName}();`);
         }
         catch (e) {
-            MessageBoxControl.open("不存在的人脸样式！");
+            MessageBoxControl.open("Invalid style!");
         }
     }
     original() {

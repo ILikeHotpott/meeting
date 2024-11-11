@@ -45,7 +45,6 @@ public class RoomInfoUtil {
                     throw new LiveException("The room is full！");
                 }
                 roomInfo.getRoomMemberIds().add(id);
-                //进入房间更新时间
                 roomInfo.setEndChangeDate(new Date());
                 break;
             }
@@ -98,7 +97,6 @@ public class RoomInfoUtil {
     public static void outRoom(String id) {
         RoomInfo roomInfo = findById(id);
         if (null == roomInfo) {
-            //如果未查到不处理
             return;
         }
         if (roomInfo.getRoomMemberIds().contains(id)) {
@@ -106,7 +104,6 @@ public class RoomInfoUtil {
         } else {
             roomInfo.setRoomAdminId(null);
         }
-        //退出房间，更新时间
         roomInfo.setEndChangeDate(new Date());
         checkRoomNum();
     }

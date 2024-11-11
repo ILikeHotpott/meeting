@@ -14,7 +14,6 @@
 
 .select-option-box-box{
     position: absolute;
-    /*视频蒙版上面*/
     z-index: 20;
     display: flex;
     flex-direction: column;

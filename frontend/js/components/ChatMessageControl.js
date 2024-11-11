@@ -63,7 +63,7 @@ export default class ChatMessageControl {
         chatMessageBodyLeftBoxEl.className = 'chat-message-body-left-box';
         const chatMessageBodyHeadSculpture = document.createElement('div');
         chatMessageBodyHeadSculpture.className = 'chat-message-body-head-sculpture';
-        chatMessageBodyHeadSculpture.innerText = '他';
+        chatMessageBodyHeadSculpture.innerText = 'He';
         chatMessageBodyLeftBoxEl.appendChild(chatMessageBodyHeadSculpture);
         const chatMessageBodyMessageBox = document.createElement('div');
         chatMessageBodyMessageBox.className = 'chat-message-body-message-box';
@@ -102,7 +102,7 @@ export default class ChatMessageControl {
         chatMessageBodyMessageBox.appendChild(chatMessageBodyMessage);
         const chatMessageBodyHeadSculpture = document.createElement('div');
         chatMessageBodyHeadSculpture.className = 'chat-message-body-head-sculpture';
-        chatMessageBodyHeadSculpture.innerText = '我';
+        chatMessageBodyHeadSculpture.innerText = 'Me';
         chatMessageBodyRightBoxEl.appendChild(chatMessageBodyMessageBox);
         chatMessageBodyRightBoxEl.appendChild(chatMessageBodyHeadSculpture);
         this.chatMessageBodyBoxEl.appendChild(chatMessageBodyRightBoxEl);
@@ -113,7 +113,7 @@ export default class ChatMessageControl {
         chatMessageBodyLeftBoxEl.className = 'chat-message-body-left-box';
         const chatMessageBodyHeadSculpture = document.createElement('div');
         chatMessageBodyHeadSculpture.className = 'chat-message-body-head-sculpture';
-        chatMessageBodyHeadSculpture.innerText = '他';
+        chatMessageBodyHeadSculpture.innerText = 'He';
         chatMessageBodyLeftBoxEl.appendChild(chatMessageBodyHeadSculpture);
         const chatMessageBodyMessageBox = document.createElement('div');
         chatMessageBodyMessageBox.className = 'chat-message-body-message-box';

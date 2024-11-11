@@ -29,7 +29,6 @@ public class AdminController {
             String ciphertext = DigestUtils.md5DigestAsHex(plaintext.getBytes(StandardCharsets.UTF_8)).toUpperCase(Locale.CHINA);
             String ciphertext1 = selfConfigPropertiesBean.getCiphertext();
             if (ciphertext1.equals(ciphertext)) {
-                //释放内存
                 RoomInfoUtil.clear();
                 SignTransferUtil.clear();
                 return "ok";

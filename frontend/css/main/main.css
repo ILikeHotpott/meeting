@@ -42,7 +42,6 @@ body {
     background-color: rgb(122, 122, 122);
 }
 
-/*各个浮层的大小*/
 .video-max-box {
     z-index: 777;
 }
@@ -75,7 +74,6 @@ body {
     z-index: 111;
 }
 
-/*进度条隐藏*/
 ::-webkit-scrollbar {
     width: 0;
 }

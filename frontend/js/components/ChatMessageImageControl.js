@@ -59,7 +59,7 @@ _a = ChatMessageImageControl;
     footerEl.className = 'chat-message-image-box-footer';
     const btnBox = document.createElement('div');
     btnBox.className = 'button-box';
-    btnBox.innerText = '下载';
+    btnBox.innerText = 'Download';
     btnBox.addEventListener('click', () => {
         FileUtil.downloadFile(_a.downloadFileUrl, _a.downloadFileName);
     });
