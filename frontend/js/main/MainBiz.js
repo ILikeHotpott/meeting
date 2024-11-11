@@ -14,6 +14,7 @@ import CustomBoxControl from "../components/CustomBoxControl.js";
 import UserListTipsControl from "../components/UserListTipsControl.js";
 import ChatMessageImageControl from "../components/ChatMessageImageControl.js";
 import ChatMessageVideoControl from "../components/ChatMessageVideoControl.js";
+
 class MainBiz {
     static run() {
         LoadingControl.mount(this.bodyEl);
@@ -147,39 +148,6 @@ class MainBiz {
             </div>
             <div class="chat-room-body-box">
                 <div class="chat-room-body-video-box">
-                </div>
-            </div>
-            <div class="chat-room-footer-box">
-                <div class="chat-room-footer-left-box">
-                    <span>Video Style：</span>
-                    <div class="select-box">
-                        <span>test</span>
-                        <div class="select-option-box-box self-video-style">
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-room-footer-middle-box">
-                    <div class="tv-box">
-                        <div class="tv-header-box">
-                            <span>TV</span>
-                        </div>
-                        <div class="tv-body-box">
-                        </div>
-                        <div class="tv-footer-box">
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-room-footer-right-box">
-                    <div class="chat-message-btn-box">
-                        <div class="chat-message-left-btn">
-                            <div class="chat-message-left-dot"></div>
-                            Messages
-                        </div>
-                        <div class="chat-message-right-btn">
-                            <div class="chat-message-right-dot"></div>
-                            Private
-                        </div>
-                    </div>
                 </div>
             </div>
         `;

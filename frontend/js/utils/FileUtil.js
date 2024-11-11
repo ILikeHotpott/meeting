@@ -69,6 +69,6 @@ class FileUtil {
 FileUtil.fileMaxSize = 10485760;
 FileUtil.sendMaxSize = 5120;
 FileUtil.maxMessageLenght = 1000;
-FileUtil.overMaxMessageSuffix = '--：消息过长，无法全部显示，你可以尝试以文件的方式进行发送！';
+FileUtil.overMaxMessageSuffix = '--：Message is too long, please shorten it.';
 FileUtil.mergeBaseUrlMap = new Map();
 export default FileUtil;

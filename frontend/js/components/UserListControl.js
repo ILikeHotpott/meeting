@@ -30,7 +30,7 @@ class UserListControl {
     static clickEvent(id) {
         this.dotMap.get(id).needShow = false;
         this.hideUserDot(id);
-        CustomBoxControl.open("私人消息", ChatRoomBoxBiz.getPrivateChatMessage(id).getChatMessageBoxEl(), () => this.dotMap.get(id).needShow = true);
+        CustomBoxControl.open("Private Message", ChatRoomBoxBiz.getPrivateChatMessage(id).getChatMessageBoxEl(), () => this.dotMap.get(id).needShow = true);
     }
     static showUserDot(id) {
         if (!this.dotMap.get(id).needShow) {

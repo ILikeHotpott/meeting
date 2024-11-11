@@ -17,7 +17,7 @@ class TvBoxControl {
             if (!this.switch) {
                 if (this.isOnce) {
                     this.isOnce = false;
-                    MessageBoxControl.open("屏幕共享开启后，如果点击浏览器自带的停止共享，下一次将重新选择分享的屏幕，如果是点击此网站自带的图标的话，会使用上一次选择的屏幕进行分享。", () => {
+                    MessageBoxControl.open("When screen sharing is turned on, if you click the Stop Sharing that comes with your browser, the screen you want to share will be reselected the next time, or if you click the icon that comes with this website, the screen you selected last time will be used for sharing.", () => {
                         this.open();
                     });
                     return;
