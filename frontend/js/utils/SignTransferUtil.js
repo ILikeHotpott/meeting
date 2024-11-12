@@ -307,7 +307,7 @@ class SignTransferUtil {
     }
     static offerReceiveMessage(key, pc) {
         this.sendMessageStateMap.set(key, false);
-        this.handleChannel(key, pc.createDataChannel('xiaomaomi-xj'));
+        this.handleChannel(key, pc.createDataChannel('yitongchannel-xj'));
     }
     static answerReceiveMessage(key, pc) {
         this.sendMessageStateMap.set(key, false);
