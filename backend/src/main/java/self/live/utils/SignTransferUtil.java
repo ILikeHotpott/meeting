@@ -26,7 +26,6 @@ public class SignTransferUtil {
                 offerIdentities.add(offerIdentity);
             }
         }
-        //获取后删掉
         offerIdentityList.removeAll(offerIdentities);
         return offerIdentities;
     }
